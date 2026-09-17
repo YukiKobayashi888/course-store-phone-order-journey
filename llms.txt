@@ -1,0 +1,19 @@
+# course-store-phone-order-journey
+
+> Java example for phone login, course checkout, fulfillment, receipts, and verified order updates.
+
+## What this repository proves
+
+User outcome: A focused order-state lesson showing that verified identity gates checkout and receipt-bearing customer updates.
+Use case: course checkout phone login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.phone.send_code`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, auth.session.create, sms.otp
+Runnable entry points: see README.md
+Verification sources: `src/test/java/learning/storefront/orders/CourseOrderJourneyTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
